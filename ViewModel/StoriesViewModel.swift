@@ -100,7 +100,7 @@ class StoryCellViewModel {
     /// - Returns: The image data
     /// - Throws: RequestError if the image fetch fails
     func fetchImage() async throws -> Data {
-        guard let urlString = recommendation.promoImage?.urls.size650 else {
+        guard let urlString = recommendation.promoImage?.urls?.size650 else {
             throw RequestError.urlError
         }
         let imageData = try await serviceProvider.fetchImages(urlString: urlString)

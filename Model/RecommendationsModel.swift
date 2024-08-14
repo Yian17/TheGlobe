@@ -16,6 +16,8 @@ struct RecommendationModel: Codable {
     var title: String
     var authors: [String]
     var protectionProduct: String
+    
+    // Image is Optional
     var promoImage: ImageModel?
     
     enum CodingKeys: String, CodingKey {
@@ -26,13 +28,12 @@ struct RecommendationModel: Codable {
     }
 }
 
-
 struct ImageModel: Codable {
-    var urls: URLsModel
+    var urls: URLsModel?
 }
 
 struct URLsModel: Codable {
-    var size650: String
+    var size650: String?
     
     enum CodingKeys: String, CodingKey {
         case size650 = "650"

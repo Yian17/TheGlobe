@@ -8,6 +8,11 @@ TheGlobe is an iOS application that displays news stories from The Globe and Mai
 - Shows story details including title, authors, and images
 - Indicates subscription-required articles with a red "X"
 
+## Requirements
+- iOS 16.0+
+- Xcode 14.0+
+- Swift 5.0+
+
 ## Architecture
 This project uses the MVVM (Model-View-ViewModel) architecture:
 - **Models**: Represent the data structure of news stories

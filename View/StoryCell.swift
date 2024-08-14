@@ -98,6 +98,7 @@ class StoryCell: UITableViewCell {
             } catch {
                 print("Failed to load image: \(error)")
                 // TODO: Set a placeholder image depends on the use cases
+                self.newsImageView.image = UIImage()
             }
         }
         
